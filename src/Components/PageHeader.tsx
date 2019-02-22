@@ -6,16 +6,17 @@ interface IPageHeaderProps {
   title: string;
 }
 
-const PageHeader: React.SFC<IPageHeaderProps> = (props: IPageHeaderProps) =>
-  <Jumbotron>
-    <h1>{props.title}</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <p>
-      <Button variant="primary">Learn more</Button>
-    </p>
-  </Jumbotron>;
+const PageHeader: React.SFC<IPageHeaderProps> = (props: IPageHeaderProps) => {
+    return <Jumbotron>
+      <h1>{props.title}</h1>
+      <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p>
+        <Button variant="primary">Learn more</Button>
+      </p>
+    </Jumbotron>;
+  };
 
 export default PageHeader;
