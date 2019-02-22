@@ -6,7 +6,7 @@ interface PageHeaderProps {
   title: string
 }
 
-const PageHeader = (props: PageHeaderProps) =>
+const PageHeader: React.SFC<PageHeaderProps> = (props: PageHeaderProps) =>
   <Jumbotron>
     <h1>{props.title}</h1>
     <p>
